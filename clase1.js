@@ -17,5 +17,9 @@ class Estudiante extends Persona {
     obtenerGrado() {
       return this.grado;
     }
+  
+    toString() {
+      return `${super.obtenerNombre()}, ${super.obtenerEdad()} años, Fecha de nacimiento: ${super.obtenerFechaNacimiento().toDateString()}, Grado: ${this.grado}`;
+    }
   }
   

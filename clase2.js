@@ -12,4 +12,17 @@ class Trabajador {
       super(nombre, edad, fechaNacimiento);
       this.puesto = puesto;
     }
+  
+    establecerPuesto(puesto) {
+      if (typeof puesto === 'string' && puesto.trim() !== '') {
+        this.puesto = puesto;
+      } else {
+        throw new Error('Puesto inválido.');
+      }
+    }
+  
+    obtenerPuesto() {
+      return this.puesto;
+    }
+  
   }  

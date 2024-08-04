@@ -24,5 +24,9 @@ class Trabajador {
     obtenerPuesto() {
       return this.puesto;
     }
+
+    realizarTarea() {
+      console.log('Realizando tarea laboral');
+    }
   
   }  

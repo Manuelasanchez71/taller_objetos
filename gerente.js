@@ -17,4 +17,9 @@ class Gerente extends Empleado {
   obtenerBono() {
     return this.bono;
   }
+
+  calcularSalario() {
+    return this.salario + this.bono;
+  }
 }
+module.exports = Gerente;

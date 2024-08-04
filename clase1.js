@@ -21,6 +21,10 @@ class Estudiante extends Persona {
     toString() {
       return `${super.obtenerNombre()}, ${super.obtenerEdad()} años, Fecha de nacimiento: ${super.obtenerFechaNacimiento().toDateString()}, Grado: ${this.grado}`;
     }
+
+    realizarTarea() {
+      console.log('Realizando tarea escolar');
+    }
   }
   
   

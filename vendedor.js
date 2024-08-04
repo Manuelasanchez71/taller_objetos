@@ -17,4 +17,10 @@ class Vendedor extends Empleado {
   obtenerComision() {
     return this.comision;
   }
+  
+  calcularSalario() {
+    return this.salario + this.comision;
+  }
 }
+
+module.exports = Vendedor;
